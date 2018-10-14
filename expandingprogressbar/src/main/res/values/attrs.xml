@@ -2,10 +2,10 @@
 <resources>
     <declare-styleable name="ExpandingProgressBar">
         <attr name="radius" format="dimension"/>
-        <attr name="topPercentage" format="float"/>
+        <attr name="top_percentage" format="float"/>
         <attr name="color" format="color"/>
         <attr name="color_gradient" format="color"/>
-        <attr name="speed" format="integer"/>
+        <attr name="rotation_speed" format="integer"/>
         <attr name="stroke_width" format="dimension"/>
         <attr name="android:gravity" />
     </declare-styleable>

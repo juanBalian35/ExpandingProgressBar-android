@@ -98,9 +98,9 @@ public class ExpandingProgressBar extends View {
             mColor2 = typedArray.getColor(R.styleable.ExpandingProgressBar_color_gradient, DEFAULT_COLOR2);
             mRadius = typedArray.getDimension(R.styleable.ExpandingProgressBar_radius, DEFAULT_RADIUS);
             mStrokeWidth = typedArray.getDimensionPixelSize(R.styleable.ExpandingProgressBar_stroke_width, dpToPx(context, DEFAULT_STROKE_WIDTH));
-            mRotationSpeed = typedArray.getInt(R.styleable.ExpandingProgressBar_speed, DEFAULT_ROTATION_SPEED);
+            mRotationSpeed = typedArray.getInt(R.styleable.ExpandingProgressBar_rotation_speed, DEFAULT_ROTATION_SPEED);
             mGravity = typedArray.getInteger(R.styleable.ExpandingProgressBar_android_gravity, DEFAULT_GRAVITY);
-            mTopPercentage = typedArray.getFloat(R.styleable.ExpandingProgressBar_topPercentage, DEFAULT_TOP_PERCENTAGE);
+            mTopPercentage = typedArray.getFloat(R.styleable.ExpandingProgressBar_top_percentage, DEFAULT_TOP_PERCENTAGE);
             typedArray.recycle();
         }
 
