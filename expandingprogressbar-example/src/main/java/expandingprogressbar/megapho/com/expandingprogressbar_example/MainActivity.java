@@ -23,14 +23,14 @@ public class MainActivity extends AppCompatActivity {
         final TextView helloWorldTV = findViewById(R.id.tv);
         helloWorldTV.setVisibility(View.INVISIBLE);
 
-        final ExpandingProgressBar e = findViewById(R.id.epb);
-        e.start();
+        final ExpandingProgressBar expandedProgressBar = findViewById(R.id.epb);
+        expandedProgressBar.start();
 
-        e.setOnExpandListener(new ExpandingProgressBar.onExpandListener() {
+        expandedProgressBar.setOnExpandListener(new ExpandingProgressBar.onExpandListener() {
             @Override
             public void preExpand() {
                 Animation fadeOut = new AlphaAnimation(1, 0);
-                fadeOut.setInterpolator(new AccelerateInterpolator()); //and this
+                fadeOut.setInterpolator(new AccelerateInterpolator());
                 fadeOut.setDuration(250);
 
                 fadeOut.setAnimationListener(new Animation.AnimationListener() {
@@ -59,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                e.expand();
+                expandedProgressBar.expand();
             }
-        }, 2750);
+        }, 3000);
     }
 }
