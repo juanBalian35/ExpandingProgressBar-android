@@ -208,7 +208,7 @@ public class ExpandingProgressBar extends View {
                 if (mCircleRadius >= getHeight() + mStrokeWidth) {
                     mAnimationState = AnimationState.INVISIBLE;
                 }
-                else if (mCircleRadius >= getHeight() && !mIsBackgroundTransparent) {
+                else if (mCircleRadius/2 + mStrokeWidth >= getHeight() && !mIsBackgroundTransparent) {
                     mIsBackgroundTransparent = true;
                     setBackgroundColor(Color.parseColor("#00000000"));
 
